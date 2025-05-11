@@ -37,6 +37,7 @@ h2 {
 }
 
 .section {
+    margin-top: 10rem;
     min-height: 100vh;
 }
 
@@ -95,15 +96,21 @@ h2 {
     border-radius: 50%;
 }
 
+.inicio {
+    margin-top: 0;
+}
+
 .inicio h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .inicio p {
     font-weight: 400;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .redes-sociais ul {
@@ -118,7 +125,7 @@ h2 {
 }
 
 .sobre h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .sobre-text {
@@ -134,4 +141,34 @@ h2 {
 
 .sobre-text p {
     margin-bottom: 2rem;
+}
+
+.tecnologias h2 {
+    margin-bottom: 4rem;
+}
+
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 7rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tecnologias-card {
+    padding-top: 3rem;
+    border: 1px solid var(--glass-color);
+}
+
+.tecnologias-card img {
+    display: block;
+    width: auto;
+    height: 10rem;
+    margin: 0 auto 2rem;
+}
+
+.tecnologias-description {
+    background-color: var(--grey-color);
+    padding: 2rem;
+    text-align: center
 }
