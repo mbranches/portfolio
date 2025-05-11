@@ -7,6 +7,116 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projeto">Projetos</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" id="inicio">
+        <div class="section-content">
+            <img src="assets/img/foto-redonda.png" alt="Minha foto em formato redondo" class="foto-perfil">
+            <h1>Olá, eu sou Marcus Branches</h1>
+            <p>Desenvolvedor Back-End e amante de tecnologia.</p>
+            <div class="redes-sociais">
+                <ul>
+                    <a href="https://linkedin.com/in/marcusbranches" target="_blank"><img src="assets/img/linkedin-icon.png" alt="icone do Linkedin"></a>
+                </ul>
+                <ul>
+                    <a href="https://github.com/mbranches" target="_blank"><img src="assets/img/github-icon.png" alt="icone do GitHub"></a>
+                    <ul>
+                        <a href="mailto:marcusvbranches@gmail.com"><img src="assets/img/email-icon.png" alt="icone do Email"></a>
+                    </ul>
+                </ul>
+                    <a href="api.whatsapp.com/send?phone=5591982016939" target="_blank"><img src="assets/img/whatsapp-icon.png" alt="icone do whatsapp"></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="sobre">
+        <div class="section-content">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-text">
+                <p>Olá! Meu nome é Marcus Branches, tenho 17 anos. Sou desenvolvedor back-end, com foco em Java e Spring Boot, estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Sou acadêmico Bacharel em Engenharia de Software na Universidade do Estado do Pará (UEPA) e autodidata há mais de 1 ano, concentrando meus estudos, principalmente, em Back-End.</p>
+            </div>
+        </div>
+
+        <div class="section-content tecnologias">
+            <h2>Tecnologias e Ferramentas</h2>
+            
+            <p>Essas são algumas das tecnologias e ferramentas que tenho conhecimento e já utilizei em meus projetos:</p>
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />              
+        </div>
+    </section>
+
+    <section class="section" id="projetos">
+        <div class="section-content">
+            <h2>Meus Projetos</h2>
+
+            <div class="projetos-list">
+                <div class="projetos-card">
+                    <img src="assets/img/departamento-reparos-image.png" alt="imagem da estrutura do banco de dados do projeto departamento de reparos API" class="projetos-img">
+
+                    <h3 class="projetos-title">Departamento de Reparos API</h3>
+
+                    <p class="projetos-description">API desenvolvida para a gestão de um Departamento de Reparos. A aplicação conta com relacionamentos complexos. A mesma tem diversas funcionaldades, tais como: controle de estoque, conforme a mesma é utilizada em reparos, CRUD de Cliente, Funcionário, Veículo, Reparo e Peça. Permite, também, associar ou desassociar funcionários e peças a reparos específicos, fazer consultar avançadas de reparos por data, cliente e funcionário por data.</p>
+
+                    <div class="projetos-stacks">
+                        <div class="projetos-stack">Java</div>
+                        <div class="projetos-stack">Spring Boot</div>
+                        <div class="projetos-stack">MySQL</div>
+                        <div class="projetos-stack">Docker</div>
+                        <div class="projetos-stack">Hibernate</div>
+                    </div>
+                </div>
+
+                <div class="projetos-card">
+                    <img src="assets/img/orcamentos-image.png" alt="imagem do projeto orçamentos SINAPI" class="projetos-img">
+
+                    <h3 class="projetos-title">Orçamentos SINAPI</h3>
+
+                    <p class="projetos-description">App Desktop de fácil utilização que auxilia na criação de orçamentos de insumos para a construção cívil. Possui funcionalidades como criar orçamento, associar um cliente ao mesmo e cadastrar insumos.</p>
+
+                    <div class="projetos-stacks">
+                        <div class="projetos-stack">Java</div>
+                        <div class="projetos-stack">Spring Boot</div>
+                        <div class="projetos-stack">MySQL</div>
+                        <div class="projetos-stack">Docker</div>
+                        <div class="projetos-stack">Hibernate</div>
+                        <div class="projetos-stack">JavaFX</div>
+                    </div>
+                </div>
+
+                <div class="projetos-card">
+                    <img src="assets/img/ledger-image.png" alt="imagem ilustrativa do projeto ledger" class="projetos-img">
+
+                    <h3 class="projetos-title">Ledger API</h3>
+
+                    <p class="projetos-description">API desenvolvida como desafio da comunidade DevsNorte. A mesma conta com funcionalidades como cadastro de transações, listar histórico de transações, podendo filtrar por data, entrada ou saída. Conta, ainda, com a possibilidade de consulta de saldo, que faz uma soma de todas as transações, típico de um Ledger, e exportação de transações para Json ou CSV.</p>
+
+                    <div class="projetos-stacks">
+                        <div class="projetos-stack">Java</div>
+                        <div class="projetos-stack">Spring Boot</div>
+                        <div class="projetos-stack">MySQL</div>
+                        <div class="projetos-stack">Docker</div>
+                        <div class="projetos-stack">Hibernate</div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
