@@ -5,7 +5,14 @@
 }
 
 :root {
-    
+    --primary-color: #4f46e5;
+    --secondary-color: #7c3aed;
+    --tertiary-color: rgba(79, 70, 229, 0.3);
+    --grey-color: rgba(255, 255, 255, 0.05);
+    --dark-color: #0f172a;
+    --darker-color: #0a0f1c;
+    --light-color: #e2e8f0;
+    --glass-color: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -14,6 +21,58 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
-    line-height: 1.5;
+    font-size: 1.6rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.section-content {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+}   
+
+.menu {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    list-style: none;
+}   
+
+.menu-link {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.menu-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
 }
