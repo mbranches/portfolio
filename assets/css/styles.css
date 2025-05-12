@@ -55,7 +55,7 @@ h3 {
 }
 
 .section {
-    margin-top: 10rem;
+    padding-top: 8rem;
     min-height: 100vh;
 }
 
@@ -107,6 +107,7 @@ h3 {
 }
 
 .foto-perfil {
+    animation: flutuar 5s ease-in-out infinite;
     width: 35rem;
     height: 35rem;
     margin-bottom: 1rem;
@@ -115,7 +116,7 @@ h3 {
 }
 
 .inicio {
-    margin-top: 0;
+    padding-top: 0;
 }
 
 .inicio h1 {
@@ -304,5 +305,15 @@ h3 {
     .projetos-card {
         max-width: 80%;
         margin: 0 auto;
+    }
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5%);
     }
 }
