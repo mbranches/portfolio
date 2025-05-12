@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 :root {
@@ -13,6 +15,7 @@
     --darker-color: #0a0f1c;
     --light-color: #e2e8f0;
     --glass-color: rgba(255, 255, 255, 0.1);
+    
 }
 
 html {
@@ -21,7 +24,6 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -111,7 +113,7 @@ h3 {
     width: 35rem;
     height: 35rem;
     margin-bottom: 1rem;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 0 20px var(--tertiary-color);
     border-radius: 50%;
 }
 
@@ -250,6 +252,97 @@ h3 {
     text-decoration: underline;
 }
 
+.contatos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 6rem 4rem;
+    border-radius: 1.5rem;
+    background-color: var(--grey-color);
+    backdrop-filter: blur(10px);
+}
+
+.contatos-redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.redes-sociais-container {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociais-container img {
+    margin-right: 1rem;
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    border-radius: 50%;
+    padding: 1rem;
+    overflow: visible;
+}
+
+.redes-sociais-container a {
+    font-size: 1.7rem;
+    color: #a3a2a2;
+}
+
+.redes-sociais-container h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.form-contatos {
+    
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--glass-color);
+    background-color: var(--grey-color);
+    color: var(--light-color);
+    font-size: 1.6rem;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(40deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    border: none;
+}
+
+#message {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 5.32rem;
+}
+
 .close-menu {
     display: none;
 }
@@ -305,6 +398,14 @@ h3 {
     .sobre-text {
         border-radius: 0;
     }
+}
+
+@media (max-width: 530px) {
+    .contatos-grid {
+        width: 100%;
+        border-radius: 0;
+    }
+    
 }
 
 @media (max-width: 670px) {

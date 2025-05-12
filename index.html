@@ -206,6 +206,59 @@
             </div>
         </div>
     </section>
+    
+    <section class="section contatos" id="contatos">
+        <div class="section-content">
+            <h2>Contatos</h2>
+            
+            <contatos class="contatos-grid">
+                <div class="contatos-redes-sociais">
+                    <div class="redes-sociais-container">
+                        <img src="./assets/img/email-transparent.svg" alt="Ícone do E-mail">
+                        <div class="redes-socias-description">
+                            <h3>E-mail</h3>
+                            <a href="mailto:marcusvbranches@gmail.com" target="_blank">marcusvbranches@gmail.com</a>
+                        </div>
+                    </div>
+
+                <div class="redes-sociais-container">
+                    <img src="assets/img/linkedin-transparent.svg" alt="Ícone do LinkedIn">
+                    <div class="redes-socias-description">
+                        <h3>Linkedin</h3>
+                        <a href="https://linkedin.com/in/marcusbranches" target="_blank">linkedin.com/in/marcusbranches</a>
+                    </div>
+                </div>
+
+                <div class="redes-sociais-container">
+                    <img src="./assets/img/github-transparent.svg" alt="Ícone do GitHub">
+                    <div class="redes-socias-description">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/mbranches" target="_blank">github.com/mbranches</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="form-contatos" action="https://formspree.io/f/xblozyjn" method="POST">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" class="form-input" id="name" name="name" placeholder="Seu Nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-input" name="email" id="email" placeholder="email@dominio.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensagem:</label>
+                    <textarea class="form-input" name="message" id="message" placeholder="Digite sua mensagem aqui" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit" class="form-button">Enviar Mensagem</button>
+            </form>
+        </contatos>
+    </div>
+</section>
 </body>
 
 <script src="./assets/js/script.js"></script>
