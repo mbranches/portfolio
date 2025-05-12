@@ -203,6 +203,28 @@ h3 {
     color: rgba(226, 232, 240, 0.8  );
 }
 
+.projetos-stacks {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
 .projetos-stack {
-    display: none
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border: 0.1rem solid var(--light-color);
+    border-radius: 1rem;
+}
+
+.link-github {
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+}
+
+.link-github:hover {
+    text-decoration: underline;
 }
