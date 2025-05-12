@@ -188,7 +188,7 @@ h3 {
 
 .projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 7rem;
     max-width: 100%;
     margin: 0 auto; 
@@ -307,14 +307,14 @@ h3 {
     }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 670px) {
     .foto-perfil {
         width: 25rem;
         height: 25rem;
     }
     
     .projetos-card {
-        max-width: 80%;
+        max-width: 70%;
         margin: 0 auto;
     }
 }
