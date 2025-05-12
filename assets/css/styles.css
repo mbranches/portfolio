@@ -199,6 +199,11 @@ h3 {
     border: 1px solid var(--glass-color);
     border-radius: 1.5rem;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.projetos-card:hover {
+    border-color: var(--primary-color);
 }
 
 .projetos-img {
