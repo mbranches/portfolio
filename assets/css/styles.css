@@ -172,7 +172,7 @@ h3 {
 
 .projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     gap: 7rem;
     max-width: 100%;
     margin: 0 auto; 
