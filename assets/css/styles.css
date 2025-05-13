@@ -367,14 +367,18 @@ h3 {
 .close-menu {
     display: none;
 }
+@media (max-width: 475px) {
+    body {
+        font-size: 1.6rem;
+    }
 
-@media (max-width: 430px) {
+    h1 {
+        font-size: 3rem;
+    }
+
     h2 {
         font-size: 2.7rem;
     }
-}
-
-@media (max-width: 475px) {
 
     .navbar {
         display: none;
