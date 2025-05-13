@@ -445,6 +445,12 @@ h3 {
     }
 }
 
+@media (width >= 670px) and (height <= 650px) {
+    .inicio {
+        margin-top: 10rem;
+    }
+}
+
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
