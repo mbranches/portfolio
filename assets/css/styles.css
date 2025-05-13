@@ -125,7 +125,6 @@ h3 {
 .inicio h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
     text-align: center;
 }
 
@@ -133,6 +132,11 @@ h3 {
     font-weight: 400;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.inicio h1, .inicio p {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .redes-sociais ul {
@@ -367,6 +371,7 @@ h3 {
 .close-menu {
     display: none;
 }
+
 @media (max-width: 475px) {
     body {
         font-size: 1.6rem;
@@ -380,6 +385,29 @@ h3 {
         font-size: 2.7rem;
     }
 
+    .sobre-text {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .contatos-grid {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+}
+
+@media (max-width: 670px) {
+    .foto-perfil {
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .projetos-card {
+        max-width: 70%;
+        margin: 0 auto;
+    }
     .navbar {
         display: none;
     }
@@ -418,30 +446,6 @@ h3 {
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-    }
-
-    .sobre-text {
-        border-radius: 0;
-    }
-}
-
-@media (max-width: 530px) {
-    .contatos-grid {
-        width: 100%;
-        border-radius: 0;
-    }
-    
-}
-
-@media (max-width: 670px) {
-    .foto-perfil {
-        width: 25rem;
-        height: 25rem;
-    }
-    
-    .projetos-card {
-        max-width: 70%;
-        margin: 0 auto;
     }
 }
 
