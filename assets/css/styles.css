@@ -372,8 +372,8 @@ h3 {
         font-size: 1.6rem;
     }
 
-    h1 {
-        font-size: 3rem;
+    .inicio h1 {
+        font-size: 30px;
     }
 
     h2 {
