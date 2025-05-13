@@ -238,7 +238,7 @@
                 </div>
             </div>
             
-            <form class="form-contatos" action="https://formspree.io/f/xblozyjn" method="POST">
+            <form class="form-contatos" id="form-contatos">
                 <div class="form-group">
                     <label for="name" class="form-label">Nome:</label>
                     <input type="text" class="form-input" id="name" name="name" placeholder="Seu Nome" required>
@@ -255,6 +255,7 @@
                 </div>
                 
                 <button type="submit" class="form-button">Enviar Mensagem</button>
+                <div id="status-msg" class="status-msg"></div>
             </form>
         </contatos>
     </div>
