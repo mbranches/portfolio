@@ -224,11 +224,6 @@ h3 {
     border-color: var(--primary-color);
 }
 
-.projetos-img {
-    height: 20rem;
-    width: 100%;
-}
-
 .projetos-text {
     padding: 1.6rem;
 }
